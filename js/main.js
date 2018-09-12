@@ -7,7 +7,8 @@ $(document).ready(function () {
 
   $btn.click(function (e) {
     var target = $(event.target);
-    target.is('.btn-prev') ? console.log('prev') : console.log('next');
+    target.is('.btn-prev') ? $carousel.addClass('prev') : $carousel.addClass('next');
+    target.is('.btn-prev') ? $carousel.children('li:last').prependTo($carousel) : $carousel.children('li:first').appendTo($carousel);
     e.preventDefault();
   })
 

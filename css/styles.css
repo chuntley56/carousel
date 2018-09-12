@@ -18,6 +18,16 @@ body, html {
   position: relative;
 }
 
+.prev {
+  transform: translateX(-300px);
+  transition: transform 0.2s ease;
+}
+
+.next {
+  transform: translateX(-300px);
+  transition: transform 0.2s ease;
+}
+
 .slide {
   float: left;
   width: 300px;
